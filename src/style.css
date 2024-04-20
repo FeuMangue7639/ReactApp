@@ -47,3 +47,65 @@ strong{
       "wdth" 100,
       "YTLC" 500;
 }
+
+.footer {
+  background-color: #a8a8a8; /* Fond gris */
+  padding: 30px 0; /* Ajoute un peu d'espace en haut et en bas */
+}
+
+.container {
+  max-width: 1200px; /* Limite la largeur du contenu du footer */
+  margin: 0 auto; /* Centre le contenu horizontalement */
+}
+
+/* Ajoutez d'autres styles CSS selon vos besoins */
+
+/* Remplace les puces par des tirets bleus */
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+ul li::before {
+  content: "—";
+  color: blue;
+  margin-right: 5px;
+}
+
+
+/* Styles pour le premier bloc */
+.first-block {
+  width: 100%;
+}
+
+.image-container {
+  position: relative;
+}
+
+.full-width {
+  width: 100%;
+  display: block;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* Styles pour le deuxième bloc */
+.second-block {
+  background-color: #ffffff; /* Couleur de fond */
+  border: 1px solid #dddddd; /* Bordure */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Ombre */
+  margin: 20px; /* Marge de tous les côtés */
+}
+
+.container {
+  padding: 20px; /* Rembourrage à l'intérieur du conteneur */
+}
+
+
+
