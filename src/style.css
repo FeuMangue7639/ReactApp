@@ -101,11 +101,34 @@ ul li::before {
   border: 1px solid #dddddd; /* Bordure */
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Ombre */
   margin: 20px; /* Marge de tous les côtés */
+  height: 500px;
 }
 
 .container {
   padding: 20px; /* Rembourrage à l'intérieur du conteneur */
 }
 
+.h1grand{
+  font-size: 3em;
+}
+
+.h2grand{
+  font-size: 2em;
+}
+
+.h2noir{
+  color: black;
+}
+
+.textenoir{
+  color: black;
+}
+
+.trait-bleu {
+  border: 0;
+  height: 2px; /* Augmente l'épaisseur du trait */
+  background-color: blue;
+  margin: 20px 0; /* Ajoute une marge au-dessus et en dessous du trait */
+}
 
 
