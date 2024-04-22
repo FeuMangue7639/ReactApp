@@ -174,4 +174,10 @@ ul li::before {
   width: 100%; /* Redimensionner la taille des images */
 }
 
+.realisation h3 {
+  font-size: 16px; /* ou toute autre taille de police que vous préférez */
+}
 
+#icone{
+  color: black;
+}

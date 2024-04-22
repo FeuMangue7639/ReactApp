@@ -1,7 +1,7 @@
 import './App.css';
 import './style.css';
 import React from 'react';
-import { Route, Routes, Link } from 'react-router-dom'; // Pas besoin de BrowserRouter ici
+import { Route, Routes, Link, } from 'react-router-dom'; // Pas besoin de BrowserRouter ici
 
 import Home from './pages/Home';
 import Contact from './pages/Contact';
@@ -20,8 +20,11 @@ export default function App() {
   return (
     <div className="App">
       <header className="App-header">
+
+
         <NavigationBar />
         <Routes>
+          <Route path="/" element={<Home />} />
           <Route path="/home" element={<Home />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/realisations" element={<Realisations />} />
