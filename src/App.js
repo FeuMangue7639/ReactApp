@@ -11,6 +11,10 @@ import Blog from './pages/Blog';
 import NavigationBar from './components/NavigationBar';
 import MentionsLegales from './pages/MentionsLegales'; // Assurez-vous de fournir le bon chemin vers votre fichier MentionsLegales.jsx
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub, faTwitter, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+
+
 
 export default function App() {
   return (
@@ -28,50 +32,58 @@ export default function App() {
       </header>
 
       <footer className="footer">
-      <div className="container">
-        <div className="row">
-          <div className="col-md-3">
-            <strong>Bloc 1</strong>
-            <ul>
-              <li>Chat</li>
-              <li>Chien</li>
-              <li>Oiseau</li>
-              <li>Lapin</li>
-              <li>Poisson</li>
-            </ul>
-          </div>
-          <div className="col-md-3">
-            <strong>Bloc 2</strong>
-            <ul>
-              <li><Link to="/home">Accueil</Link></li>
-              <li><Link to="/service">Service</Link></li>
-              <li><Link to="/contact">Contact</Link></li>
-              <li><Link to="/mentions-legales">Mentions légales</Link></li>
-            </ul>
-          </div>
-          <div className="col-md-3">
-            <strong>Bloc 3</strong>
-            <ul>
-              <li>Vélo</li>
-              <li>Voiture</li>
-              <li>Moto</li>
-              <li>Bus</li>
-              <li>Train</li>
-            </ul>
-          </div>
-          <div className="col-md-3">
-            <strong>Bloc 4</strong>
-            <ul>
-              <li>Montagne</li>
-              <li>Plage</li>
-              <li>Forêt</li>
-              <li>Désert</li>
-              <li>Prairie</li>
-            </ul>
-          </div>
-        </div>
+  <div className="container">
+    <div className="row">
+      <div className="col-md-3">
+        <strong>John Doe</strong>
+        <ul>
+          <li>40 Rue Laure Diebold</li>
+          <li>69009 Lyon, France</li>
+          <li>Téléphone : 06 20 30 40 50</li>
+          <br/>
+          {/* Liste d'icônes sans puce */}
+          <li style={{ listStyleType: 'none' }}>
+            <a href="https://api.github.com/users/github-john-doe" target="_blank" rel="noopener noreferrer">
+              <FontAwesomeIcon icon={faGithub} style={{ fontSize: '24px', color: 'black', marginRight: '10px' }} />
+            </a>
+            <a href="https://api.github.com/users/github-john-doe" target="_blank" rel="noopener noreferrer">
+              <FontAwesomeIcon icon={faTwitter} style={{ fontSize: '24px', color: 'black', marginRight: '10px' }} />
+            </a>
+            <a href="https://api.github.com/users/github-john-doe" target="_blank" rel="noopener noreferrer">
+              <FontAwesomeIcon icon={faLinkedin} style={{ fontSize: '24px', color: 'black' }} />
+            </a>
+          </li>
+        </ul>
       </div>
-    </footer>
+      <div className="col-md-3">
+        <strong>Liens utiles</strong>
+        <ul>
+          <li><Link to="/home">Accueil</Link></li>
+          <li><Link to="/service">Service</Link></li>
+          <li><Link to="/contact">Contact</Link></li>
+          <li><Link to="/mentions-legales">Mentions légales</Link></li>
+        </ul>
+      </div>
+      <div className="col-md-3">
+        <strong>Mes dernières réalisations</strong>
+        <ul>
+          <li>Fresh food</li>
+          <li>Restaurant Akira</li>
+          <li>Espace bien-être</li>
+        </ul>
+      </div>
+      <div className="col-md-3">
+        <strong>Mes derniers articles</strong>
+        <ul>
+          <li>Coder son site en HTML/CSS</li>
+          <li>Vendre ses produits sur le web</li>
+          <li>Se positionner sur Google</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
     </div>
   );
 }

@@ -100,8 +100,7 @@ ul li::before {
   background-color: #ffffff; /* Couleur de fond */
   border: 1px solid #dddddd; /* Bordure */
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Ombre */
-  margin: 20px; /* Marge de tous les côtés */
-  height: 500px;
+  height: 750px;
 }
 
 .container {
@@ -116,12 +115,21 @@ ul li::before {
   font-size: 2em;
 }
 
+.h1noir{
+  color: black;
+}
+
 .h2noir{
+  color: black;
+}
+
+.h3noir{
   color: black;
 }
 
 .textenoir{
   color: black;
+
 }
 
 .trait-bleu {
@@ -129,6 +137,41 @@ ul li::before {
   height: 2px; /* Augmente l'épaisseur du trait */
   background-color: blue;
   margin: 20px 0; /* Ajoute une marge au-dessus et en dessous du trait */
+}
+
+/* Ajoutez ces styles à votre fichier CSS */
+.footer {
+  text-align: left; /* Alignement du texte à gauche */
+}
+
+.footer strong {
+  display: block; /* Assurez-vous que les éléments <strong> occupent une ligne entière */
+}
+
+.footer ul {
+  padding-left: 0; /* Supprimez le remplissage à gauche de la liste */
+  list-style: none; /* Supprimez les puces de la liste */
+}
+
+.ligne-bleu{
+  border: 0;
+  height: 4px; /* Augmente l'épaisseur du trait */
+  background-color: blue;
+  margin: 20px 0; /* Ajoute une marge au-dessus et en dessous du trait */
+  margin-right: 800px;
+  margin-left: 800px;
+}
+
+/* global.css */
+
+.realisation {
+  border: 1px solid #ccc; /* Cadre autour de chaque réalisation */
+  padding: 20px; /* Ajouter un espacement intérieur */
+  margin-bottom: 20px; /* Ajouter un espacement en bas */
+}
+
+.realisation-img {
+  width: 100%; /* Redimensionner la taille des images */
 }
 
 
