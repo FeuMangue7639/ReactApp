@@ -137,6 +137,8 @@ ul li::before {
   height: 2px; /* Augmente l'épaisseur du trait */
   background-color: blue;
   margin: 20px 0; /* Ajoute une marge au-dessus et en dessous du trait */
+  border-color: blue; /* Couleur de la ligne */
+  opacity: 1; /* Opacité (1 = opaque, 0 = transparent) */
 }
 
 /* Ajoutez ces styles à votre fichier CSS */
@@ -160,6 +162,8 @@ ul li::before {
   margin: 20px 0; /* Ajoute une marge au-dessus et en dessous du trait */
   margin-right: 800px;
   margin-left: 800px;
+  border-color: blue; /* Couleur de la ligne */
+  opacity: 1; /* Opacité (1 = opaque, 0 = transparent) */
 }
 
 /* global.css */
@@ -180,4 +184,69 @@ ul li::before {
 
 #icone{
   color: black;
+}
+
+
+.image-container {
+  position: relative; /* Permet de positionner l'élément blanc par rapport à cette div */
+}
+
+.white-square {
+  position: absolute; /* Position absolue par rapport à la div parente */
+  top: 50%; /* Décalage vertical de 50% par rapport au haut de la div parente */
+  left: 50%; /* Décalage horizontal de 50% par rapport à la gauche de la div parente */
+  transform: translate(-50%, -50%); /* Pour centrer l'élément au milieu de la div parente */
+  width: 75%; /* Largeur du carré blanc */
+  height: 75%; /* Hauteur du carré blanc */
+  background-color: white; /* Couleur de fond blanche */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Ombre portée */
+  border-radius: 10px; /* Rayon de bordure pour arrondir les coins */
+}
+
+
+.blue-line {
+  border: none; /* Pas de bord */
+  border-top: 4px solid blue; /* Bordure supérieure bleue, épaisseur de 4 pixels */
+  width: 30%; /* Largeur de la ligne bleue */
+  margin: 20px auto; /* Marge pour centrer la ligne bleue */
+  border-color: blue; /* Couleur de la ligne */
+  opacity: 1; /* Opacité (1 = opaque, 0 = transparent) */
+}
+
+#h1margin{
+  margin-top: 40px; /* Marge en haut du titre h1 */
+}
+
+#h3petit{
+  font-size: 23px;
+}
+
+.half-block {
+  flex: 1; /* Chaque moitié du carré blanc occupe la moitié de l'espace disponible */
+  padding: 20px; /* Ajouter un peu de marge à l'intérieur de chaque moitié */
+  display: flex; /* Utiliser le modèle de boîte flexible pour les éléments enfants */
+  flex-direction: column; /* Disposition verticale des éléments enfants */
+  justify-content: center; /* Centrer verticalement le contenu */
+}
+
+.half-block {
+  display: inline-block;
+  width: 50%; /* Ajustez selon vos besoins */
+  text-align: left; /* Alignement du texte à gauche */
+}
+
+.small-title {
+  margin-top: 20px;
+}
+
+.blue-line2 {
+  width: 90%; /* Ajustez selon vos besoins */
+  border-color: blue; /* Couleur de la ligne */
+  opacity: 1; /* Opacité (1 = opaque, 0 = transparent) */
+  margin: 20px auto; /* Marge pour centrer la ligne bleue */
+  border-top: 4px solid blue; /* Bordure supérieure bleue, épaisseur de 4 pixels */
+}
+
+.h2margin{
+  margin-left: 40px; /* Ajout d'une marge gauche de 10px (ou ajustez selon vos préférences) */
 }
