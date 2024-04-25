@@ -4,7 +4,7 @@ const Blog = () => {
             <img src="./banner.jpg" alt="Image" style={{ width: '100%', maxWidth: '100vw', height: 'auto' }} />
             <br/>
             <br/>
-            <h1 className="h1noir">Blog</h1>
+            <h1 className="h1noir">BLOG</h1>
             <h3 className="h3noir">Retrouvez ici quelques articles sur le développement web</h3> {/* Tout petit titre */}
             <hr className="ligne-bleu" /> {/* Ligne bleue */}
         
