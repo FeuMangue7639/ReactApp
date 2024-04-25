@@ -49,7 +49,7 @@ strong{
 }
 
 .footer {
-  background-color: #a8a8a8; /* Fond gris */
+  background-color: #EEE; /* Fond gris */
   padding: 30px 0; /* Ajoute un peu d'espace en haut et en bas */
 }
 
@@ -57,8 +57,6 @@ strong{
   max-width: 1200px; /* Limite la largeur du contenu du footer */
   margin: 0 auto; /* Centre le contenu horizontalement */
 }
-
-/* Ajoutez d'autres styles CSS selon vos besoins */
 
 /* Remplace les puces par des tirets bleus */
 ul {
@@ -68,7 +66,7 @@ ul {
 
 ul li::before {
   content: "—";
-  color: blue;
+  color: #0d6efd;
   margin-right: 5px;
 }
 
@@ -97,14 +95,14 @@ ul li::before {
 
 /* Styles pour le deuxième bloc */
 .second-block {
-  background-color: #ffffff; /* Couleur de fond */
-  border: 1px solid #dddddd; /* Bordure */
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Ombre */
+  background-color: #EEE; 
+  border: 1px solid #EEE; 
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); 
   height: 750px;
 }
 
 .container {
-  padding: 20px; /* Rembourrage à l'intérieur du conteneur */
+  padding: 20px; 
 }
 
 .h1grand{
@@ -134,44 +132,41 @@ ul li::before {
 
 .trait-bleu {
   border: 0;
-  height: 2px; /* Augmente l'épaisseur du trait */
-  background-color: blue;
-  margin: 20px 0; /* Ajoute une marge au-dessus et en dessous du trait */
-  border-color: blue; /* Couleur de la ligne */
-  opacity: 1; /* Opacité (1 = opaque, 0 = transparent) */
+  height: 4px; 
+  background-color: #0d6efd;
+  margin: 20px 0; 
+  border-color: #0d6efd; 
+  opacity: 1; 
 }
 
-/* Ajoutez ces styles à votre fichier CSS */
 .footer {
-  text-align: left; /* Alignement du texte à gauche */
+  text-align: left; 
 }
 
 .footer strong {
-  display: block; /* Assurez-vous que les éléments <strong> occupent une ligne entière */
+  display: block; 
 }
 
 .footer ul {
-  padding-left: 0; /* Supprimez le remplissage à gauche de la liste */
-  list-style: none; /* Supprimez les puces de la liste */
+  padding-left: 0; 
+  list-style: none; 
 }
 
 .ligne-bleu{
   border: 0;
-  height: 4px; /* Augmente l'épaisseur du trait */
-  background-color: blue;
-  margin: 20px 0; /* Ajoute une marge au-dessus et en dessous du trait */
+  height: 4px; 
+  background-color: #0d6efd;
+  margin: 20px 0; 
   margin-right: 800px;
   margin-left: 800px;
-  border-color: blue; /* Couleur de la ligne */
-  opacity: 1; /* Opacité (1 = opaque, 0 = transparent) */
+  border-color: #0d6efd; 
+  opacity: 1; 
 }
 
-/* global.css */
-
 .realisation {
-  border: 1px solid #ccc; /* Cadre autour de chaque réalisation */
-  padding: 20px; /* Ajouter un espacement intérieur */
-  margin-bottom: 20px; /* Ajouter un espacement en bas */
+  border: 1px solid #EEE; /* Cadre autour de chaque réalisation */
+  padding: 20px; 
+  margin-bottom: 20px; 
 }
 
 .realisation-img {
@@ -179,42 +174,46 @@ ul li::before {
 }
 
 .realisation h3 {
-  font-size: 16px; /* ou toute autre taille de police que vous préférez */
+  font-size: 16px; 
 }
 
 #icone{
-  color: black;
+  color: #0d6efd;
+}
+
+#icone:hover{
+  color: #cde1f8;
 }
 
 
 .image-container {
-  position: relative; /* Permet de positionner l'élément blanc par rapport à cette div */
+  position: relative; 
 }
 
 .white-square {
-  position: absolute; /* Position absolue par rapport à la div parente */
-  top: 50%; /* Décalage vertical de 50% par rapport au haut de la div parente */
-  left: 50%; /* Décalage horizontal de 50% par rapport à la gauche de la div parente */
-  transform: translate(-50%, -50%); /* Pour centrer l'élément au milieu de la div parente */
-  width: 75%; /* Largeur du carré blanc */
-  height: 75%; /* Hauteur du carré blanc */
-  background-color: white; /* Couleur de fond blanche */
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Ombre portée */
-  border-radius: 10px; /* Rayon de bordure pour arrondir les coins */
+  position: absolute; 
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  width: 75%; 
+  height: 75%; 
+  background-color: #EEE ; 
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); 
+  border-radius: 10px; 
 }
 
 
 .blue-line {
-  border: none; /* Pas de bord */
-  border-top: 4px solid blue; /* Bordure supérieure bleue, épaisseur de 4 pixels */
-  width: 30%; /* Largeur de la ligne bleue */
-  margin: 20px auto; /* Marge pour centrer la ligne bleue */
-  border-color: blue; /* Couleur de la ligne */
-  opacity: 1; /* Opacité (1 = opaque, 0 = transparent) */
+  border: none; 
+  border-top: 4px solid #0d6efd; 
+  width: 30%; 
+  margin: 20px auto; 
+  border-color: #0d6efd; 
+  opacity: 1; 
 }
 
 #h1margin{
-  margin-top: 40px; /* Marge en haut du titre h1 */
+  margin-top: 40px; 
 }
 
 #h3petit{
@@ -224,15 +223,15 @@ ul li::before {
 .half-block {
   flex: 1; /* Chaque moitié du carré blanc occupe la moitié de l'espace disponible */
   padding: 20px; /* Ajouter un peu de marge à l'intérieur de chaque moitié */
-  display: flex; /* Utiliser le modèle de boîte flexible pour les éléments enfants */
-  flex-direction: column; /* Disposition verticale des éléments enfants */
-  justify-content: center; /* Centrer verticalement le contenu */
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center; 
 }
 
 .half-block {
   display: inline-block;
-  width: 50%; /* Ajustez selon vos besoins */
-  text-align: left; /* Alignement du texte à gauche */
+  width: 50%; 
+  text-align: left; 
 }
 
 .small-title {
@@ -240,13 +239,55 @@ ul li::before {
 }
 
 .blue-line2 {
-  width: 90%; /* Ajustez selon vos besoins */
-  border-color: blue; /* Couleur de la ligne */
-  opacity: 1; /* Opacité (1 = opaque, 0 = transparent) */
-  margin: 20px auto; /* Marge pour centrer la ligne bleue */
-  border-top: 4px solid blue; /* Bordure supérieure bleue, épaisseur de 4 pixels */
+  width: 90%; 
+  border-color: #0d6efd; 
+  opacity: 1; 
+  margin: 20px auto; 
+  border-top: 4px solid #0d6efd; 
 }
 
 .h2margin{
-  margin-left: 40px; /* Ajout d'une marge gauche de 10px (ou ajustez selon vos préférences) */
+  margin-left: 40px; 
 }
+
+.contact-form {
+  margin-left: 20px; 
+  margin-right: 20px; 
+}
+
+.inoir{
+  color: black;
+  font-size: 20px;
+}
+
+address{
+  color: black;
+  font-size: 20px;
+}
+
+a {
+  color: black; 
+}
+
+.pnoir{
+  color: black;
+}
+
+.ppetit{
+  font-size: 20px;
+  text-align: left;
+}
+
+.aleft{
+  text-align: left;
+  font-size: 20px;
+}
+
+.h2left{
+  text-align: left;
+}
+
+.nav-link:hover {
+  color: rgba(#EEE , 0.8);
+}
+
