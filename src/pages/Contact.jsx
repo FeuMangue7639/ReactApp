@@ -5,7 +5,7 @@ import 'leaflet/dist/leaflet.css';
 const Contact = () => {
   return (
     <div className="contact-container">
-      <div className="image-container">
+      <div className="image-container top">
         <img src="./contact-bg.jpg" alt="Image d'accueil" className="full-width" />
         <div className="white-square">
           <h1 className="h1noir" id="h1margin">ME CONTACTER</h1>
@@ -15,7 +15,7 @@ const Contact = () => {
           {/* Division en deux parties */}
           <div className="row">
             <div className="col-md-6">
-              <h2 className="h2noir h2margin">Formulaire de contact</h2>
+              <h2 className="h2noir h2margin" id='margintop'>Formulaire de contact</h2>
               <hr className="blue-line2" />
               <form className="contact-form">
                 <div className="form-group">
@@ -37,7 +37,7 @@ const Contact = () => {
               </form>
             </div>
             <div className="col-md-6">
-              <h2 className="h2noir h2margin">Titre Droite</h2>
+              <h2 className="h2noir h2margin" id='margintop2'>Mes coordonnées</h2>
               <hr className="blue-line2" />
               <address style={{ textAlign: 'left', marginLeft: '40px' }}>
                 <i className="fas fa-map-marker inoir" style={{ marginRight: '5px' }}></i>
@@ -64,6 +64,9 @@ const Contact = () => {
             </div>
           </div>
         </div> {/* Carré blanc au milieu de l'image */}
+      </div>
+      <div className="special-footer">
+        {/* Contenu du footer */}
       </div>
     </div>
   );

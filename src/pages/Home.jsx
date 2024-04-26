@@ -5,7 +5,7 @@ const Home = () => {
     <div>
       {/* Premier bloc */}
       <div className="first-block">
-        <div className="image-container">
+        <div className="image-container top">
           <img src="./hero-bg.jpg" alt="Image d'accueil" className="full-width" />
           <div className="centered">
             <h1 className="h1grand">Bonjour, je suis John Doe</h1>
