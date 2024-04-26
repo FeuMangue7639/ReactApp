@@ -1,7 +1,7 @@
 const Blog = () => {
     return (
         <div>
-            <img src="./banner.jpg" alt="Image" style={{ width: '100%', maxWidth: '100vw', height: 'auto' }} />
+            <img src="./banner.jpg" alt="Image" style={{ width: '100%', maxWidth: '100vw', height: 'auto' }} className="top"/>
             <br/>
             <br/>
             <h1 className="h1noir">BLOG</h1>
@@ -59,6 +59,9 @@ const Blog = () => {
                 </div>
                 
             </div>
+            <div className="special-footer2">
+        {/* Contenu du footer */}
+      </div>
         </div>
     )
 }

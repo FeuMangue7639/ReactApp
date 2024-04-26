@@ -291,3 +291,192 @@ a {
   color: rgba(#EEE , 0.8);
 }
 
+/* Media Query pour les écrans de taille inférieure à 768px (par exemple, pour les appareils mobiles) */
+@media (max-width: 768px) {
+  .conteneur {
+      font-size: 14px; /* Ajustez la taille de la police pour les écrans mobiles */
+  }
+
+  .h1grand {
+    font-size: 28px;
+  }
+
+  .h2grand {
+    font-size: 20px;
+  }
+
+  .btn {
+    font-size: 16px;
+  }
+
+  .textenoir {
+    font-size: 16px;
+  }
+  .footer .row > div {
+    width: 50%; /* Ajuste la largeur de chaque colonne à 100% */
+  }
+  footer {
+    margin-top: 360px;
+  }
+
+
+
+
+  .contact-container {
+    padding: 20px; /* Ajouter un espace autour du contenu */
+  }
+
+  .image-container {
+    position: relative; /* Assurer que le contenu reste à l'intérieur du conteneur */
+  }
+
+  .white-square {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centrer le carré blanc */
+    width: 90%; /* Ajuster la largeur du carré blanc */
+    padding: 20px; /* Ajouter de l'espace intérieur */
+  }
+
+  #h1margin {
+    font-size: 24px; /* Réduire la taille du titre principal */
+  }
+
+  #h3petit {
+    font-size: 16px; /* Réduire la taille du sous-titre */
+  }
+
+  .blue-line {
+    margin-top: 10px; /* Ajouter un peu d'espace au-dessus de la ligne bleue */
+    margin-bottom: 10px; /* Ajouter un peu d'espace en dessous de la ligne bleue */
+  }
+
+  .h2margin {
+    font-size: 20px; /* Réduire la taille des sous-titres */
+  }
+
+  .blue-line2 {
+    margin-bottom: 10px; /* Ajouter un peu d'espace en dessous de la ligne bleue */
+  }
+
+  .contact-form {
+    margin-top: 20px; /* Ajouter un peu d'espace au-dessus du formulaire */
+  }
+
+  .form-control {
+    font-size: 14px; /* Réduire la taille du texte dans les champs de formulaire */
+    padding: 10px; /* Ajouter un peu d'espace intérieur dans les champs de formulaire */
+  }
+
+  .btn-primary {
+    font-size: 16px; /* Réduire la taille du texte du bouton */
+    padding: 10px 20px; /* Ajuster les marges du bouton */
+  }
+
+  .h2margin {
+    margin-top: 20px; /* Ajouter un peu d'espace au-dessus du titre */
+  }
+
+  address {
+    font-size: 14px; /* Réduire la taille du texte de l'adresse */
+    margin-top: 20px; /* Ajouter un peu d'espace au-dessus de l'adresse */
+  }
+
+  .leaflet-container {
+    width: 100% !important; /* Ajuster la largeur de la carte pour qu'elle soit pleinement responsive */
+    height: 200px !important; /* Définir une hauteur fixe pour la carte */
+    margin-top: 20px; /* Ajouter un peu d'espace au-dessus de la carte */
+  }
+
+  #margintop{
+    margin-top: 200px;
+  }
+
+  .top{
+    margin-top: 100px;
+  }
+
+
+  .special-footer {
+    margin-top: 550px;
+  }
+  .special-footer2 {
+    margin-top: 0px;
+  }
+  
+  .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrer les éléments horizontalement */
+}
+
+.col-sm-4 {
+    width: 100%;
+    max-width: 300px; /* Limiter la largeur maximale des réalisations */
+    margin-bottom: 20px; /* Espacement entre les réalisations */
+}
+}
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .conteneur {
+    font-size: 16px; /* Ajustez la taille de la police pour les écrans de tablette */
+  }
+
+  .h1grand {
+    font-size: 32px; /* Augmentez légèrement la taille du titre principal */
+  }
+
+  .h2grand {
+    font-size: 22px; /* Augmentez légèrement la taille des sous-titres */
+  }
+
+  .btn {
+    font-size: 18px; /* Augmentez légèrement la taille du texte des boutons */
+  }
+
+  .textenoir {
+    font-size: 18px; /* Augmentez légèrement la taille du texte noir */
+  }
+
+  .footer .row > div {
+    width: 100%; /* Ajustez la largeur de chaque colonne à 100% pour une disposition en colonne */
+  }
+  footer {
+    margin-top: 360px; /* Conservez la même marge supérieure */
+  }
+  #margintop{
+    margin-top: 200px;
+  }
+  #margintop2{
+    margin-top: 230px;
+  }
+
+  .special-footer{
+    margin-top: 500px;
+  }
+
+  .top{
+    margin-top: 100px;
+  }
+  .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrer les éléments horizontalement */
+}
+
+.col-sm-4 {
+    width: 100%;
+    max-width: 500px; /* Limiter la largeur maximale des réalisations */
+    margin-bottom: 20px; /* Espacement entre les réalisations */
+}
+}
