@@ -3,6 +3,7 @@ import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css'; 
 
 const Contact = () => {
+
   return (
     <div className="contact-container">
       <div className="image-container top">
