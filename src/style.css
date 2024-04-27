@@ -291,6 +291,8 @@ a {
   color: rgba(#EEE , 0.8);
 }
 
+
+
 /* Media Query pour les écrans de taille inférieure à 768px (par exemple, pour les appareils mobiles) */
 @media (max-width: 768px) {
   .conteneur {
