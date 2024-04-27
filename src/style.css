@@ -36,7 +36,6 @@ p{
 
 strong{
     font-family: "Nunito Sans", sans-serif;
-    font-optical-sizing: auto;
     font-weight: 600;
     font-style: normal;
     font-variation-settings:
@@ -284,7 +283,8 @@ a {
 }
 
 .nav-link:hover {
-  color: rgba(#EEE , 0.8);
+  color: rgba(#EEE);
+  opacity: 0,8;
 }
 
 
