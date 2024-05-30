@@ -7,7 +7,7 @@ const Contact = () => {
   return (
     <div className="contact-container">
       <div className="image-container top">
-        <img src="./contact-bg.jpg" alt="Image d'accueil" className="full-width" />
+        <img src="./contact-bg.jpg" alt="Accueil" className="full-width" />
         <div className="white-square">
           <h1 className="h1noir" id="h1margin">ME CONTACTER</h1>
           <h3 className="h3noir" id="h3petit">Pour me contacter en vue d'un entretien ou d'une future collaboration, merci de remplir le formulaire de contact.</h3>
@@ -48,19 +48,11 @@ const Contact = () => {
                 <span>06 20 30 40 50</span>
               </address>
               <div style={{ marginTop: '20px' }}>
-                <h2>Carte</h2>
                 {/* Intégration de la carte */}
                 <MapContainer center={[45.771555, 4.796121]} zoom={16} style={{ height: '300px', width: '80%', marginLeft: '40px' }}>
-      <TileLayer
-        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-        attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-      />
-      <Marker position={[45.771555, 4.796121]}>
-        <Popup>
-          40 rue Laure Diebold, 69009 Lyon, France
-        </Popup>
-      </Marker>
-    </MapContainer>
+                  <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'/>
+                  <Marker position={[45.771555, 4.796121]}><Popup> 40 rue Laure Diebold, 69009 Lyon, France</Popup></Marker>
+                </MapContainer>
               </div>
             </div>
           </div>

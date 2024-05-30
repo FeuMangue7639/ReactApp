@@ -53,17 +53,143 @@ strong{
   margin: 0 auto; /* Centre le contenu horizontalement */
 }
 
-/* Remplace les puces par des tirets bleus */
-ul {
-  list-style-type: none;
-  padding-left: 0;
+.image-container {
+  position: relative;
+  display: inline-block;
 }
 
-ul li::before {
-  content: "—";
-  color: #0d6efd;
-  margin-right: 5px;
+.full-width {
+  width: 100%;
+  display: block;
 }
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Couleur et opacité de la couche sombre */
+  pointer-events: none; /* Permet de cliquer à travers l'overlay */
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white; /* Assurez-vous que le texte est visible sur la couche sombre */
+}
+
+.h1grand, .h2grand {
+  margin: 0;
+  padding: 10px 0;
+}
+
+.btn {
+  margin-top: 20px;
+}
+
+
+#blocrealisations {
+  max-width: 1500px; /* Ajustez cette valeur selon vos besoins */
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.realisation {
+  margin-bottom: 20px;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.h2noir, .h3noir {
+  margin: 10px 0;
+}
+
+.btn {
+  margin-top: 10px;
+}
+
+.btn-custom {
+  background-color: white;
+  color: #007bff; /* La couleur primaire de Bootstrap */
+  border: 1px solid #007bff; /* Bordure de la même couleur que le texte */
+}
+
+.btn-custom:hover {
+  background-color: #e6e6e6; /* Couleur de fond plus sombre au survol */
+  color: #0056b3; /* Couleur du texte au survol */
+  border-color: #0056b3; /* Couleur de la bordure au survol */
+}
+
+.realisation {
+  position: relative;
+  padding: 20px;
+  margin-bottom: 40px; /* Ajoute une marge en dessous de chaque réalisation */
+  border: none; /* Supprime l'ombre des cadres */
+  border-radius: 5px;
+  background-color: white;
+}
+
+.info-box {
+  position: absolute;
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  top: 100%;
+  left: 0;
+  right: 0;
+  margin-top: 0px;
+  border: 1px solid #ccc; /* Ajoute une bordure de couleur grise */
+}
+
+.info-box p {
+  margin: 0;
+  color: #333;
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none; /* Supprime l'effet de soulignement */
+}
+
+
+.footer {
+  margin-top: 50px; /* Ajoute une marge en haut du footer */
+  /* Vos autres styles pour le footer */
+}
+
+
+.textg {
+  text-align: left;
+}
+
+.textg h2, .textg h3, .textg p {
+  text-align: left;
+}
+
+
+.footer-dark {
+  background-color: #333; /* Couleur gris foncé */
+  color: white; /* Couleur du texte */
+  text-align: center; /* Centrer le texte */
+  padding: 10px 0; /* Ajoutez du padding pour l'espacement */
+}
+
+
+
+
+.h1marge{
+  margin-top: 100px;
+}
+
+
 
 
 /* Styles pour le premier bloc */
@@ -88,13 +214,7 @@ ul li::before {
   text-align: center;
 }
 
-/* Styles pour le deuxième bloc */
-.second-block {
-  background-color: #EEE; 
-  border: 1px solid #EEE; 
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); 
-  height: 750px;
-}
+
 
 .container {
   padding: 20px; 
@@ -285,6 +405,33 @@ a {
 .nav-link:hover {
   color: rgba(#EEE);
   opacity: 0,8;
+}
+
+.small-text {
+  font-size: 16px; /* Ajustez cette valeur selon vos besoins */
+}
+
+.custom-list {
+  list-style-type: none; /* Supprime les puces par défaut */
+  padding: 0;
+}
+
+.custom-list li {
+  position: relative;
+  padding-left: 20px; /* Espace pour le chevron */
+  margin-bottom: 5px; /* Espace entre les éléments */
+}
+
+.custom-list li::before {
+  content: '>';
+  position: absolute;
+  left: 0;
+  color: blue; /* Couleur du chevron */
+}
+
+
+.margin-bottom-large {
+  margin-bottom: 100px; /* Ajustez cette valeur selon la taille de la marge désirée */
 }
 
 
@@ -478,3 +625,5 @@ a {
     margin-bottom: 20px; /* Espacement entre les réalisations */
 }
 }
+
+
